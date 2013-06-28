@@ -1,0 +1,19 @@
+/* Effective stylesheet produced by snapshot save */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0px; padding: 0px; border: 0px none; font: inherit; vertical-align: baseline; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+ins { background-color: rgb(255, 255, 153); color: rgb(0, 0, 0); text-decoration: none; }
+mark { background-color: rgb(255, 255, 153); color: rgb(0, 0, 0); font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0px; }
+hr { display: block; height: 1px; border-right: 0px none; border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(204, 204, 204) -moz-use-text-color -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; margin: 1em 0px; padding: 0px; }
+input, select { vertical-align: middle; }
+body { font: 13px/1.231 sans-serif; }
+select, input, textarea, button { font: 99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace,sans-serif; }
+em, i { font-style: italic; }
+b, strong { font-weight: bold; }

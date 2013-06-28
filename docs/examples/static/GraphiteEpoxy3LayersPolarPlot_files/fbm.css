@@ -1,0 +1,14 @@
+/* Effective stylesheet produced by snapshot save */
+.hbox { display: -moz-box; -moz-box-orient: horizontal; -moz-box-align: stretch; }
+.hbox > * { -moz-box-flex: 0; }
+.vbox { display: -moz-box; -moz-box-orient: vertical; -moz-box-align: stretch; width: 100%; }
+.vbox > * { -moz-box-flex: 0; }
+.reverse { -moz-box-direction: reverse; }
+.box-flex0 { -moz-box-flex: 0; }
+.box-flex1, .box-flex { -moz-box-flex: 1; }
+.box-flex2 { -moz-box-flex: 2; }
+.box-group1 {  }
+.box-group2 {  }
+.start { -moz-box-pack: start; }
+.end { -moz-box-pack: end; }
+.center { -moz-box-pack: center; }

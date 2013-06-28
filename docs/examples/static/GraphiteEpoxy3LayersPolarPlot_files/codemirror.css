@@ -1,0 +1,44 @@
+/* Effective stylesheet produced by snapshot save */
+.CodeMirror { line-height: 1em; font-family: monospace; }
+.CodeMirror-scroll { overflow: auto; height: 300px; position: relative; }
+.CodeMirror-gutter { position: absolute; left: 0px; top: 0px; z-index: 10; background-color: rgb(247, 247, 247); border-right: 1px solid rgb(238, 238, 238); min-width: 2em; height: 100%; }
+.CodeMirror-gutter-text { color: rgb(170, 170, 170); text-align: right; padding: 0.4em 0.2em 0.4em 0.4em; white-space: pre ! important; }
+.CodeMirror-lines { padding: 0.4em; }
+.CodeMirror pre { border-radius: 0px 0px 0px 0px; border-width: 0px; background: none repeat scroll 0% 0% transparent; font-family: inherit; font-size: inherit; padding: 0px; margin: 0px; white-space: pre; word-wrap: normal; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror textarea { outline: medium none ! important; }
+.CodeMirror pre.CodeMirror-cursor { z-index: 10; position: absolute; visibility: hidden; border-left: 1px solid black; }
+.CodeMirror-focused pre.CodeMirror-cursor { visibility: visible; }
+div.CodeMirror-selected { background: none repeat scroll 0% 0% rgb(217, 217, 217); }
+.CodeMirror-focused div.CodeMirror-selected { background: none repeat scroll 0% 0% rgb(215, 212, 240); }
+.CodeMirror-searching { background: none repeat scroll 0% 0% rgba(255, 255, 0, 0.4); }
+.cm-s-default span.cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-default span.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-default span.cm-number { color: rgb(17, 102, 68); }
+.cm-s-default span.cm-def { color: rgb(0, 0, 255); }
+.cm-s-default span.cm-variable { color: black; }
+.cm-s-default span.cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-default span.cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-default span.cm-property { color: black; }
+.cm-s-default span.cm-operator { color: black; }
+.cm-s-default span.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-default span.cm-string { color: rgb(170, 17, 17); }
+.cm-s-default span.cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-default span.cm-meta { color: rgb(85, 85, 85); }
+.cm-s-default span.cm-error { color: rgb(255, 0, 0); }
+.cm-s-default span.cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-default span.cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-default span.cm-bracket { color: rgb(204, 204, 119); }
+.cm-s-default span.cm-tag { color: rgb(17, 119, 0); }
+.cm-s-default span.cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-default span.cm-header { color: rgb(170, 0, 170); }
+.cm-s-default span.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-default span.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-default span.cm-link { color: rgb(0, 0, 204); }
+span.cm-header, span.cm-strong { font-weight: bold; }
+span.cm-em { font-style: italic; }
+span.cm-emstrong { font-style: italic; font-weight: bold; }
+span.cm-link { text-decoration: underline; }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }

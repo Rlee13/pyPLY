@@ -1,0 +1,19 @@
+/* Effective stylesheet produced by snapshot save */
+.pln { color: rgb(0, 0, 0); }
+@media screen {
+  .str { color: rgb(186, 33, 33); }
+  .kwd { color: rgb(0, 128, 0); font-weight: bold; }
+  .com { color: rgb(64, 128, 128); font-style: italic; }
+  .typ { color: rgb(102, 0, 102); }
+  .lit { color: rgb(102, 102, 102); }
+  .pun, .opn, .clo {  }
+  .tag { color: rgb(0, 0, 136); }
+  .atn { color: rgb(102, 0, 102); }
+  .atv { color: rgb(0, 136, 0); }
+  .dec, .var { color: rgb(102, 0, 102); }
+  .fun { color: red; }
+}
+pre.prettyprint { padding: 2px; border: 1px solid rgb(136, 136, 136); }
+ol.linenums { margin-top: 0px; margin-bottom: 0px; }
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 { list-style-type: none; }
+li.L1, li.L3, li.L5, li.L7, li.L9 { background: none repeat scroll 0% 0% rgb(238, 238, 238); }

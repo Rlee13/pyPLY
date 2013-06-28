@@ -1,0 +1,10 @@
+/* Effective stylesheet produced by snapshot save */
+.cm-s-ipython span.cm-keyword { color: rgb(0, 128, 0); font-weight: bold; }
+.cm-s-ipython span.cm-number { color: rgb(0, 0, 128); }
+.cm-s-ipython span.cm-operator { color: rgb(170, 34, 255); font-weight: bold; }
+.cm-s-ipython span.cm-meta { color: rgb(170, 34, 255); }
+.cm-s-ipython span.cm-comment { color: rgb(64, 128, 128); font-style: italic; }
+.cm-s-ipython span.cm-string { color: rgb(186, 33, 33); }
+.cm-s-ipython span.cm-error { color: rgb(255, 0, 0); }
+.cm-s-ipython span.cm-builtin { color: rgb(0, 128, 0); }
+.cm-s-ipython span.cm-variable { color: rgb(0, 0, 0); }
