@@ -1,3 +1,5 @@
+# pyPLY
+
 Introduction
 ============
 
@@ -23,6 +25,8 @@ Instalation
 
 There is no package for this version. 
 Copy the library's files in the local directory or in the Python's "site-packages" folder.
+
+* [Animations Using clear_output](http://nbviewer.ipython.org/url/github.com/ipython/ipython/raw/master/examples/notebooks/Animations%20Using%20clear_output.ipynb)
 
 Licence
 =======
