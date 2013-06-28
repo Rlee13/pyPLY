@@ -1,0 +1,263 @@
+<!DOCTYPE html><html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>IPython Notebook</title>
+<link rel="stylesheet" href="static_files/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="static_files/boilerplate.css" type="text/css">
+<link rel="stylesheet" href="static_files/fbm.css" type="text/css">
+<link rel="stylesheet" href="static_files/page.css" type="text/css">
+
+
+<script type="text/javascript" src="static_files/MathJax.js" charset="utf-8"></script>
+
+<script type="text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+<link rel="stylesheet" href="static_files/codemirror.css">
+<link rel="stylesheet" href="static_files/ipython.css">
+<link rel="stylesheet" href="static_files/prettify.css">
+<link rel="stylesheet" href="static_files/notebook.css" type="text/css">
+<link rel="stylesheet" href="static_files/printnotebook.css" type="text/css">
+<link rel="stylesheet" href="static_files/renderedhtml.css" type="text/css">
+
+
+
+<style type="text/css"><!--
+
+/* Effective stylesheet produced by snapshot save */
+
+.MathJax_Hover_Frame { border-radius: 0.25em 0.25em 0.25em 0.25em; box-shadow: 0px 0px 15px rgb(136, 51, 170); border: 1px solid rgb(170, 102, 221) ! important; display: inline-block; position: absolute; }
+
+.MathJax_Hover_Arrow { position: absolute; width: 15px; height: 11px; cursor: pointer; }
+
+--></style><style type="text/css"><!--
+
+/* Effective stylesheet produced by snapshot save */
+
+#MathJax_About { position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: rgb(221, 221, 221); color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px 15px 15px 15px; box-shadow: 0px 10px 20px rgb(128, 128, 128); }
+
+.MathJax_Menu { position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid rgb(204, 204, 204); margin: 0px; cursor: default; font: menu; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px rgb(128, 128, 128); }
+
+.MathJax_MenuItem { padding: 2px 2em; background: none repeat scroll 0% 0% transparent; }
+
+.MathJax_MenuArrow { position: absolute; right: 0.5em; color: rgb(102, 102, 102); }
+
+.MathJax_MenuActive .MathJax_MenuArrow { color: white; }
+
+.MathJax_MenuCheck { position: absolute; left: 0.7em; }
+
+.MathJax_MenuRadioCheck { position: absolute; left: 1em; }
+
+.MathJax_MenuLabel { padding: 2px 2em 4px 1.33em; font-style: italic; }
+
+.MathJax_MenuRule { border-top: 1px solid rgb(204, 204, 204); margin: 4px 1px 0px; }
+
+.MathJax_MenuDisabled { color: graytext; }
+
+.MathJax_MenuActive { background-color: highlight; color: highlighttext; }
+
+.MathJax_Menu_Close { position: absolute; width: 31px; height: 31px; top: -15px; left: -15px; }
+
+--></style><style type="text/css"><!--
+
+/* Effective stylesheet produced by snapshot save */
+
+#MathJax_Zoom { position: absolute; background-color: rgb(240, 240, 240); overflow: auto; display: block; z-index: 301; padding: 0.5em; border: 1px solid black; margin: 0px; font-weight: normal; font-style: normal; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px rgb(170, 170, 170); }
+
+#MathJax_ZoomOverlay { position: absolute; left: 0px; top: 0px; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0px none; padding: 0px; margin: 0px; background-color: white; opacity: 0; }
+
+#MathJax_ZoomFrame { position: relative; display: inline-block; height: 0px; width: 0px; }
+
+#MathJax_ZoomEventTrap { position: absolute; left: 0px; top: 0px; z-index: 302; display: inline-block; border: 0px none; padding: 0px; margin: 0px; background-color: white; opacity: 0; }
+
+--></style><style type="text/css"><!--
+
+/* Effective stylesheet produced by snapshot save */
+
+.MathJax_Preview { color: rgb(136, 136, 136); }
+
+#MathJax_Message { position: fixed; left: 1px; bottom: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap; }
+
+#MathJax_MSIE_Frame { position: absolute; top: 0px; left: 0px; width: 0px; z-index: 101; border: 0px none; margin: 0px; padding: 0px; }
+
+.MathJax_Error { color: rgb(204, 0, 0); font-style: italic; }
+
+--></style><style type="text/css"><!--
+
+/* Effective stylesheet produced by snapshot save */
+
+.MathJax_Display { text-align: center; margin: 0px; position: relative; display: block; width: 100%; }
+
+.MathJax .merror { background-color: rgb(255, 255, 136); color: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal; font-size: 90%; }
+
+#MathJax_Tooltip { background-color: infobackground; color: infotext; border: 1px solid black; box-shadow: 2px 2px 5px rgb(170, 170, 170); padding: 3px 4px; z-index: 401; position: absolute; left: 0px; top: 0px; width: auto; height: auto; display: none; }
+
+.MathJax { display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; border: 0px none; padding: 0px; margin: 0px; }
+
+.MathJax img, .MathJax nobr, .MathJax a { border: 0px none; padding: 0px; margin: 0px; max-width: none; max-height: none; vertical-align: 0px; line-height: normal; text-decoration: none; }
+
+img.MathJax_strut { border: 0px none ! important; padding: 0px ! important; margin: 0px ! important; vertical-align: 0px ! important; }
+
+.MathJax span { display: inline; position: static; border: 0px none; padding: 0px; margin: 0px; vertical-align: 0px; line-height: normal; text-decoration: none; }
+
+.MathJax nobr { white-space: nowrap ! important; }
+
+.MathJax img { display: inline ! important; float: none ! important; }
+
+.MathJax * { transition: none 0s ease 0s ; }
+
+.MathJax_Processing { visibility: hidden; position: fixed; width: 0px; height: 0px; overflow: hidden; }
+
+.MathJax_Processed { display: none ! important; }
+
+.MathJax_ExBox { display: block; overflow: hidden; width: 1px; height: 60ex; }
+
+.MathJax .MathJax_EmBox { display: block; overflow: hidden; width: 1px; height: 60em; }
+
+.MathJax .MathJax_HitBox { cursor: text; background: none repeat scroll 0% 0% white; opacity: 0; }
+
+.MathJax .MathJax_HitBox * { filter: none; opacity: 1; background: none repeat scroll 0% 0% transparent; }
+
+#MathJax_Tooltip * { filter: none; opacity: 1; background: none repeat scroll 0% 0% transparent; }
+
+@font-face {
+  font-family: "MathJax_Main";
+  src: url("static_files/MathJax_Main-Regular_woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Main";
+  font-weight: bold;
+  src: url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Main";
+  font-style: italic;
+  src: url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Math";
+  font-style: italic;
+  src: url("static_files/MathJax_Math-Italic_woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Caligraphic";
+  src: url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Size1";
+  src: url("static_files/MathJax_Size1-Regular_woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Size2";
+  src: url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Size3";
+  src: url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MathJax_Size4";
+  src: url("static_files/MathJax_Size4-Regular_woff") format("woff"), url("urn:not-loaded:http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf") format("opentype");
+}
+
+.MathJax .noError { font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid; }
+
+--></style></head>
+<body data-project="IPython" data-base-project-url="/" data-base-kernel-url="/" data-read-only="False" data-notebook-id="fc463ee1-f0f5-4753-8a5a-bdd716b74213"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px none; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div style="display: none;" id="MathJax_Message"></div>
+<div style="border-top-style: none; border-left-style: none; border-right-style: none;" class="border-box-sizing ui-widget ui-widget-content" id="header">
+<span id="ipython_notebook"><h1><a href="http://127.0.0.1:8888/" alt="dashboard"><img src="static_files/ipynblogo.png" alt="IPython Notebook"></a></h1></span>
+
+<span id="login_widget">
+
+</span>
+
+
+
+</div>
+<div style="display: block;" class="border-box-sizing" id="site">
+
+<div class="border-box-sizing ui-widget" id="main_app">
+<div class="border-box-sizing ui-widget" id="notebook_panel">
+<div class="border-box-sizing" id="notebook"><div tabindex="2" class="cell text_cell border-box-sizing ui-widget-content ui-corner-all"><div style="display: none;" class="text_cell_input border-box-sizing"><div class="CodeMirror CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative"><div style="position: relative"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"><pre><span>x</span></pre></div><pre class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1"></div><div></div></div></div></div></div></div></div></div><div tabindex="-1" class="text_cell_render border-box-sizing rendered_html"><h3>Example Problem 7 page 328 from Mark. E. Tuttle's "Structural Analysis of Polymeric Composite Materials", first edition.
+</h3></div></div><div tabindex="2" class="cell border-box-sizing code_cell vbox"><div class="input hbox"><div class="prompt input_prompt">In [9]:</div><div class="input_area box-flex1"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.71666px; left: 5.71666px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-ipython" tabindex="-1"><div style="position: relative; height: 487.2px;"><div style="position: relative; top: 0px;"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"></div><pre style="top: 0px; left: 0px;" class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1; display: none;"></div><div style=""><pre><span class="cm-keyword">import</span> <span class="cm-variable">pyPLY</span></pre><pre> </pre><pre><span class="cm-comment"># see separate examples for detailed explanations about the paramenters.</span></pre><pre> </pre><pre><span class="cm-variable">GraphiteEpoxy</span> = <span class="cm-variable">pyPLY.CompositeMaterial</span>()</pre><pre><span class="cm-variable">GraphiteEpoxy.define</span>(<span class="cm-string">"GraphiteEpoxy"</span>, <span class="cm-string">"metric"</span>, <span class="cm-variable">E11</span>=<span class="cm-number">170e9</span>, <span class="cm-variable">E22</span>=<span class="cm-number">10e9</span>, <span class="cm-variable">G12</span>=<span class="cm-number">13e9</span>, <span class="cm-variable">niu12</span>=<span class="cm-number">0.3</span>, <span class="cm-variable">thk</span>=<span class="cm-number">0.125e-3</span>,</pre><pre>             <span class="cm-variable">Sigma_ut0</span> = <span class="cm-number">1500e6</span>, <span class="cm-variable">Sigma_uc0</span> = <span class="cm-number">1200e6</span>, <span class="cm-variable">Sigma_ut90</span> = <span class="cm-number">50e6</span>, <span class="cm-variable">Sigma_uc90</span> = <span class="cm-number">100e6</span>, <span class="cm-variable">Tau_u</span> = <span class="cm-number">75e6</span>,</pre><pre>             <span class="cm-variable">alpha_11</span> = <span class="cm-operator">-</span><span class="cm-number">0.9e-6</span>, <span class="cm-variable">alpha_22</span> = <span class="cm-number">27.0e-6</span>, <span class="cm-variable">beta_11</span> = <span class="cm-number">150e-6</span>, <span class="cm-variable">beta_22</span> = <span class="cm-number">4800e-6</span>)</pre><pre> </pre><pre><span class="cm-variable">layer1</span> = <span class="cm-variable">pyPLY.Lamina</span>()</pre><pre><span class="cm-variable">layer2</span> = <span class="cm-variable">pyPLY.Lamina</span>()</pre><pre><span class="cm-variable">layer3</span> = <span class="cm-variable">pyPLY.Lamina</span>()</pre><pre> </pre><pre><span class="cm-variable">layer1.define</span>(<span class="cm-string">"Layer_1"</span>, <span class="cm-number">1</span>, <span class="cm-number">30</span>)</pre><pre><span class="cm-variable">layer2.define</span>(<span class="cm-string">"Layer_2"</span>, <span class="cm-number">1</span>, <span class="cm-number">0</span>)</pre><pre><span class="cm-variable">layer3.define</span>(<span class="cm-string">"Layer_3"</span>, <span class="cm-number">1</span>, <span class="cm-number">90</span>)</pre><pre> </pre><pre><span class="cm-variable">layer1.update</span>()</pre><pre><span class="cm-variable">layer2.update</span>()</pre><pre><span class="cm-variable">layer3.update</span>()</pre><pre> </pre><pre><span class="cm-variable">laminate1</span> = <span class="cm-variable">pyPLY.Laminate</span>()</pre><pre><span class="cm-variable">laminate1.add_Lamina</span>(<span class="cm-variable">layer1</span>)</pre><pre><span class="cm-variable">laminate1.add_Lamina</span>(<span class="cm-variable">layer2</span>)</pre><pre><span class="cm-variable">laminate1.add_Lamina</span>(<span class="cm-variable">layer3</span>)</pre><pre> </pre><pre><span class="cm-variable">laminate1.update</span>()</pre></div></div></div></div></div></div></div></div></div><div class="output_wrapper"><div title="click to expand outout; double click to hide output" class="out_prompt_overlay prompt" style="display: block;"></div><div style="display: -moz-box;" class="output vbox"></div><div title="click to expand outout" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only output_collapsed vbox" style="display: none;">. . .</div></div></div><div tabindex="2" class="cell text_cell border-box-sizing"><div style="display: none;" class="text_cell_input border-box-sizing"><div class="CodeMirror CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative"><div style="position: relative"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"><pre><span>x</span></pre></div><pre class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1"></div><div></div></div></div></div></div></div></div></div><div tabindex="-1" class="text_cell_render border-box-sizing rendered_html"><h4>Apply a change in temperature of <span class="MathJax_Preview"></span><span style="" aria-readonly="true" role="textbox" id="MathJax-Element-1-Frame" class="MathJax"><nobr><span style="width: 8.899em; display: inline-block;" id="MathJax-Span-1" class="math"><span style="display: inline-block; position: relative; width: 7.401em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.906em, 1000em, 2.994em, -0.478em); top: -2.797em; left: 0em;"><span id="MathJax-Span-2" class="mrow"><span style="font-family: MathJax_Main;" id="MathJax-Span-3" class="mi">Δ</span><span style="font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-4" class="mi">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.12em;"></span></span><span style="font-family: MathJax_Main; padding-left: 0.278em;" id="MathJax-Span-5" class="mo">=</span><span style="font-family: MathJax_Main; padding-left: 0.278em;" id="MathJax-Span-6" class="mo">−</span><span id="MathJax-Span-7" class="msubsup"><span style="display: inline-block; position: relative; width: 2.697em; height: 0px;"><span style="position: absolute; clip: rect(1.956em, 1000em, 2.994em, -0.441em); top: -2.797em; left: 0em;"><span style="font-family: MathJax_Main;" id="MathJax-Span-8" class="mn">155.0</span><span style="display: inline-block; width: 0px; height: 2.797em;"></span></span><span style="position: absolute; top: -2.782em; left: 2.273em;"><span style="font-size: 70.7%; font-family: MathJax_Main;" id="MathJax-Span-9" class="mo">∘</span><span style="display: inline-block; width: 0px; height: 2.389em;"></span></span></span></span><span style="font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-10" class="mi">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span><span style="font-family: MathJax_Main;" id="MathJax-Span-11" class="mo">.</span></span><span style="display: inline-block; width: 0px; height: 2.797em;"></span></span></span><span style="border-left: 0em solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.096em;"></span></span></nobr></span><script id="MathJax-Element-1" type="math/tex"><!--
+
+--></script></h4></div></div><div tabindex="2" class="cell border-box-sizing code_cell vbox"><div class="input hbox"><div class="prompt input_prompt">In [2]:</div><div class="input_area box-flex1"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.71667px; left: 5.71666px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-ipython" tabindex="-1"><div style="position: relative; height: 64.8px;"><div style="position: relative; top: 0px;"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"></div><pre style="top: 0px; left: 0px;" class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1; display: none;"></div><div style=""><pre><span class="cm-variable">load1</span> = <span class="cm-variable">pyPLY.Loading</span>()</pre><pre><span class="cm-variable">load1.define_Load</span>(<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-operator">-</span><span class="cm-number">155</span>,<span class="cm-number">0.5</span>)</pre><pre><span class="cm-variable">load1.apply_To</span>(<span class="cm-variable">laminate1</span>)</pre></div></div></div></div></div></div></div></div></div><div class="output_wrapper"><div title="click to expand outout; double click to hide output" class="out_prompt_overlay prompt" style="display: block;"></div><div style="display: -moz-box;" class="output vbox"></div><div title="click to expand outout" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only output_collapsed vbox" style="display: none;">. . .</div></div></div><div tabindex="2" class="cell text_cell border-box-sizing"><div style="display: none;" class="text_cell_input border-box-sizing"><div class="CodeMirror CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative"><div style="position: relative"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"><pre><span>x</span></pre></div><pre class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1"></div><div></div></div></div></div></div></div></div></div><div tabindex="-1" class="text_cell_render border-box-sizing rendered_html"><h3>Results:</h3></div></div><div tabindex="2" class="cell border-box-sizing code_cell vbox"><div class="input hbox"><div class="prompt input_prompt">In [3]:</div><div class="input_area box-flex1"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.71667px; left: 5.71666px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-ipython" tabindex="-1"><div style="position: relative; height: 47.2px;"><div style="position: relative; top: 0px;"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"></div><pre style="top: 0px; left: 0px;" class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1; display: none;"></div><div style=""><pre><span class="cm-keyword">print</span> <span class="cm-string">"load1=\n"</span>, <span class="cm-variable">load1.moisture_load</span></pre><pre> </pre></div></div></div></div></div></div></div></div></div><div class="output_wrapper"><div title="click to expand outout; double click to hide output" class="out_prompt_overlay prompt" style="display: block;"></div><div style="display: -moz-box;" class="output vbox"><div class="hbox output_area"><div class="prompt"></div><div class="box-flex1 output_subarea output_text output_stream output_stdout"><pre>load1=
+[[  8.19259129e+03]
+ [  8.46120084e+03]
+ [ -2.32622694e+02]
+ [  5.03642907e-02]
+ [ -5.03642907e-02]
+ [  2.90778368e-02]]
+</pre></div></div></div><div title="click to expand outout" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only output_collapsed vbox" style="display: none;">. . .</div></div></div><div tabindex="2" class="cell text_cell border-box-sizing"><div style="display: none;" class="text_cell_input border-box-sizing"><div class="CodeMirror CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative"><div style="position: relative"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"><pre><span>x</span></pre></div><pre class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1"></div><div></div></div></div></div></div></div></div></div><div tabindex="-1" class="text_cell_render border-box-sizing rendered_html"><h4>Midplane strains and curvatures:</h4></div></div><div tabindex="2" class="cell border-box-sizing code_cell vbox"><div class="input hbox"><div class="prompt input_prompt">In [7]:</div><div class="input_area box-flex1"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.71667px; left: 5.71666px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-ipython" tabindex="-1"><div style="position: relative; height: 47.2px;"><div style="position: relative; top: 0px;"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"></div><pre style="top: 0px; left: 0px;" class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1; display: none;"></div><div style=""><pre> </pre><pre><span class="cm-keyword">print</span> <span class="cm-string">"epsilon_K=\n"</span>, <span class="cm-variable">load1.epsilon_K</span></pre></div></div></div></div></div></div></div></div></div><div class="output_wrapper"><div title="click to expand outout; double click to hide output" class="out_prompt_overlay prompt" style="display: block;"></div><div style="display: -moz-box;" class="output vbox"><div class="hbox output_area"><div class="prompt"></div><div class="box-flex1 output_subarea output_text output_stream output_stdout"><pre>epsilon_K=
+[[  1.83213284e-05]
+ [ -5.08624754e-04]
+ [  4.19989263e-04]
+ [ -9.98470880e-01]
+ [  5.03664294e+00]
+ [ -4.36510237e+00]]
+</pre></div></div></div><div title="click to expand outout" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only output_collapsed vbox" style="display: none;">. . .</div></div></div><div tabindex="2" class="cell text_cell border-box-sizing"><div style="display: none;" class="text_cell_input border-box-sizing"><div class="CodeMirror CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative"><div style="position: relative"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"><pre><span>x</span></pre></div><pre class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1"></div><div></div></div></div></div></div></div></div></div><div tabindex="-1" class="text_cell_render border-box-sizing rendered_html"><h4>Ply strains relative to the x-y coordinate system:</h4></div></div><div tabindex="2" class="cell border-box-sizing code_cell vbox"><div class="input hbox"><div class="prompt input_prompt">In [5]:</div><div class="input_area box-flex1"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.71667px; left: 5.71666px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-ipython" tabindex="-1"><div style="position: relative; height: 152.8px;"><div style="position: relative; top: 0px;"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"></div><pre style="top: 0px; left: 0px;" class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1; display: none;"></div><div style=""><pre><span class="cm-keyword">print</span> <span class="cm-string">"     layerNo"</span>, <span class="cm-string">"epsx"</span>, <span class="cm-string">" epsy"</span>, <span class="cm-string">" gammaxy"</span></pre><pre><span class="cm-keyword">for</span> <span class="cm-variable">i</span> <span class="cm-operator">in</span> <span class="cm-builtin">range</span> (<span class="cm-number">0</span>, <span class="cm-number">3</span>):</pre><pre>    <span class="cm-variable">strain</span> = <span class="cm-variable">load1.list_ply_strains_xy</span>[<span class="cm-variable">i</span><span class="cm-operator">*</span><span class="cm-number">3</span> <span class="cm-operator">+</span> <span class="cm-number">0</span>]</pre><pre>    <span class="cm-keyword">print</span> <span class="cm-string">"bottom  "</span>, <span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>, <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">0</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">1</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">2</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>)</pre><pre>    <span class="cm-variable">strain</span> = <span class="cm-variable">load1.list_ply_strains_xy</span>[<span class="cm-variable">i</span><span class="cm-operator">*</span><span class="cm-number">3</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>]</pre><pre>    <span class="cm-keyword">print</span> <span class="cm-string">"centroid"</span>, <span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>, <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">0</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">1</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">2</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>)</pre><pre>    <span class="cm-variable">strain</span> = <span class="cm-variable">load1.list_ply_strains_xy</span>[<span class="cm-variable">i</span><span class="cm-operator">*</span><span class="cm-number">3</span> <span class="cm-operator">+</span> <span class="cm-number">2</span>]</pre><pre>    <span class="cm-keyword">print</span> <span class="cm-string">"top     "</span>, <span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>, <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">0</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">1</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">strain</span>[<span class="cm-number">2</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e6</span>)</pre></div></div></div></div></div></div></div></div></div><div class="output_wrapper"><div title="click to expand outout; double click to hide output" class="out_prompt_overlay prompt" style="display: block;"></div><div style="display: -moz-box;" class="output vbox"><div class="hbox output_area"><div class="prompt"></div><div class="box-flex1 output_subarea output_text output_stream output_stdout"><pre>     layerNo epsx  epsy  gammaxy
+bottom   1 +205.5 -1453.0 +1238.0
+centroid 1 +143.1 -1138.0 +965.6
+top      1 +80.73 -823.4 +692.8
+bottom   2 +80.73 -823.4 +692.8
+centroid 2 +18.32 -508.6 +420.0
+top      2 -44.08 -193.8 +147.2
+bottom   3 -44.08 -193.8 +147.2
+centroid 3 -106.5 +121.0 -125.6
+top      3 -168.9 +435.7 -398.5
+</pre></div></div></div><div title="click to expand outout" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only output_collapsed vbox" style="display: none;">. . .</div></div></div><div tabindex="2" class="cell text_cell border-box-sizing"><div style="display: none;" class="text_cell_input border-box-sizing"><div class="CodeMirror CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative"><div style="position: relative"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"><pre><span>x</span></pre></div><pre class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1"></div><div></div></div></div></div></div></div></div></div><div tabindex="-1" class="text_cell_render border-box-sizing rendered_html"><h4>Ply stresses relative to the x-y coordinate system:</h4></div></div><div tabindex="2" class="cell border-box-sizing code_cell vbox"><div class="input hbox"><div class="prompt input_prompt">In [8]:</div><div class="input_area box-flex1"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.71667px; left: 5.71666px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-ipython" tabindex="-1"><div style="position: relative; height: 152.8px;"><div style="position: relative; top: 0px;"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"></div><pre style="top: 0px; left: 0px;" class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1; display: none;"></div><div style=""><pre><span class="cm-keyword">print</span> <span class="cm-string">"     layerNo"</span>, <span class="cm-string">"sigmax"</span>, <span class="cm-string">"    sigmay"</span>, <span class="cm-string">"    tauxy"</span></pre><pre><span class="cm-keyword">for</span> <span class="cm-variable">i</span> <span class="cm-operator">in</span> <span class="cm-builtin">range</span> (<span class="cm-number">0</span>, <span class="cm-number">3</span>):</pre><pre>    <span class="cm-variable">stress</span> = <span class="cm-variable">load1.list_ply_stresses_xy</span>[<span class="cm-variable">i</span><span class="cm-operator">*</span><span class="cm-number">3</span> <span class="cm-operator">+</span> <span class="cm-number">0</span>]</pre><pre>    <span class="cm-keyword">print</span> <span class="cm-string">"bottom  "</span>, <span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>, <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">0</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">1</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">2</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>)</pre><pre>    <span class="cm-variable">stress</span> = <span class="cm-variable">load1.list_ply_stresses_xy</span>[<span class="cm-variable">i</span><span class="cm-operator">*</span><span class="cm-number">3</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>]</pre><pre>    <span class="cm-keyword">print</span> <span class="cm-string">"centroid"</span>, <span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>, <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">0</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">1</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">2</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>)</pre><pre>    <span class="cm-variable">stress</span> = <span class="cm-variable">load1.list_ply_stresses_xy</span>[<span class="cm-variable">i</span><span class="cm-operator">*</span><span class="cm-number">3</span> <span class="cm-operator">+</span> <span class="cm-number">2</span>]</pre><pre>    <span class="cm-keyword">print</span> <span class="cm-string">"top     "</span>, <span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>, <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">0</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">1</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>), <span class="cm-string">'{0:+.4}'</span><span class="cm-variable">.format</span>(<span class="cm-variable">stress</span>[<span class="cm-number">2</span>,<span class="cm-number">0</span>]<span class="cm-operator">*</span><span class="cm-number">1e-6</span>)</pre></div></div></div></div></div></div></div></div></div><div class="output_wrapper"><div title="click to expand outout; double click to hide output" class="out_prompt_overlay prompt" style="display: block;"></div><div style="display: -moz-box;" class="output vbox"><div class="hbox output_area"><div class="prompt"></div><div class="box-flex1 output_subarea output_text output_stream output_stdout"><pre>     layerNo sigmax     sigmay     tauxy
+bottom   1 +24.73 -2.386 +2.238
+centroid 1 +13.09 -1.315 -3.826
+top      1 +1.442 -0.2445 -9.891
+bottom   2 -19.96 +9.264 +9.007
+centroid 2 -29.68 +12.24 +5.46
+top      2 -39.39 +15.22 +1.913
+bottom   3 +16.27 -64.54 +1.913
+centroid 3 +16.59 -10.92 -1.633
+top      3 +16.91 +42.69 -5.18
+</pre></div></div></div><div title="click to expand outout" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only output_collapsed vbox" style="display: none;">. . .</div></div></div><div tabindex="2" class="cell border-box-sizing code_cell vbox"><div class="input hbox"><div class="prompt input_prompt">In [ ]:</div><div class="input_area box-flex1"><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.71667px; left: 5.71666px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-ipython" tabindex="-1"><div style="position: relative; height: 29.6px;"><div style="position: relative; top: 0px;"><div style="display: none;" class="CodeMirror-gutter"><div class="CodeMirror-gutter-text"></div></div><div class="CodeMirror-lines"><div draggable="true" style="position: relative; z-index: 0; outline: medium none;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; outline: 5px auto none"></div><pre style="top: 0px; left: 0px;" class="CodeMirror-cursor"> </pre><div style="position: relative; z-index: -1; display: none;"></div><div style=""><pre> </pre></div></div></div></div></div></div></div></div></div><div class="output_wrapper"><div title="click to expand outout; double click to hide output" class="out_prompt_overlay prompt" style="display: block;"></div><div style="display: -moz-box;" class="output vbox"></div><div title="click to expand outout" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only output_collapsed vbox" style="display: none;">. . .</div></div></div><div style="height: 30%;" class="end_space"></div></div>
+</div>
+</div>
+
+</div>
+<script src="static_files/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/namespace.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/page.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/loginwidget.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="static_files/codemirror.js" charset="utf-8"></script>
+<script src="static_files/python.js" charset="utf-8"></script>
+<script src="static_files/htmlmixed.js" charset="utf-8"></script>
+<script src="static_files/xml.js" charset="utf-8"></script>
+<script src="static_files/javascript.js" charset="utf-8"></script>
+<script src="static_files/css.js" charset="utf-8"></script>
+<script src="static_files/rst.js" charset="utf-8"></script>
+<script src="static_files/markdown.js" charset="utf-8"></script>
+<script src="static_files/Markdown.Converter.js" charset="utf-8"></script>
+<script src="static_files/prettify.js" charset="utf-8"></script>
+<script src="static_files/date.format.js" charset="utf-8"></script>
+<script src="static_files/events.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/utils.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/initmathjax.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/outputarea.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/cell.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/codecell.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/textcell.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/kernel.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/notebook.js" type="text/javascript" charset="utf-8"></script>
+<script src="static_files/printnotebookmain.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+<div style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px none; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: italic; font-size-adjust: none; font-family: 'MathJax_Math',sans-serif;" id="MathJax_Font_Test"></div></body></html>
