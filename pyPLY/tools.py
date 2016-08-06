@@ -121,13 +121,13 @@ def plyDescr(laminate, descrString, matNo):
                  pyPLY
                  '''
     try:
-        import pyPLY
+        import __init__
     except ImportError, value:
         print dependencies
         raise
 
     for i in angleList:
-        layer = pyPLY.Lamina()
+        layer = __init__.Lamina()
         layer.define('', matNo, float(i))
         layer.update()
         laminate.add_Lamina(layer)
