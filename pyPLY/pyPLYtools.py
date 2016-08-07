@@ -27,6 +27,8 @@
 # 05.02.12 - pyPLYTools v.0.01
 #
 
+from __future__ import print_function
+
 #############
 # INPUT TOOLS
 #############
@@ -39,7 +41,7 @@
 #               a laminate description string like "[0,90,(+45,(0,90)2,-44)2,0/]S" is NOT OK.
 
 def plyDescr(laminate, descrString, matNo):
-
+    import pyPLY
     """
      1.Tools for reading data
      1.1 plyDescr - function to define a ply arrangement using standard ply description
@@ -64,7 +66,7 @@ def plyDescr(laminate, descrString, matNo):
 
     if match:
        if (len(match.groups()) < 4):
-           print "1.Unknown format..."
+           print("1.Unknown format...")
            sys.exit()
 
        lparen = match.group(1)
@@ -72,7 +74,7 @@ def plyDescr(laminate, descrString, matNo):
        mirror = match.group(3)
        rparen = match.group(4)
     else:
-       print "2.Unknown format..."
+       print("2.Unknown format...")
        sys.exit()
 # -------------------------------------------------------
     regex = re.compile(r'(\(\S+\)\d)', re.VERBOSE)
@@ -117,17 +119,8 @@ def plyDescr(laminate, descrString, matNo):
 
     noPly = len(angleList)
 
-    dependencies = '''This method requires:
-                 pyPLY
-                 '''
-    try:
-        import __init__
-    except ImportError, value:
-        print dependencies
-        raise
-
     for i in angleList:
-        layer = __init__.Lamina()
+        layer = pyPLY.Lamina()
         layer.define('', matNo, float(i))
         layer.update()
         laminate.add_Lamina(layer)
@@ -166,14 +159,9 @@ def mplotTThk(loadingCase, sors, ax):
      1.1 mplotTThk - function to plot stresses/strains trough thickness
          see manual for details
     """
-    dependencies = '''This method requires:
-                 matplotlib
-                 '''
-    try:
-        import matplotlib.pyplot as plt
-    except ImportError, value:
-        print dependencies
-        raise
+    import sys
+    import matplotlib.pyplot as plt
+
 
     lamName = loadingCase.laminate_name
     stackThk = lamName.ZStack
@@ -182,7 +170,7 @@ def mplotTThk(loadingCase, sors, ax):
         temp.append (i), temp.append (i)
 
     y = temp[1:len(temp)-1]
-    print y
+    print(y)
     for i in range (0, 4):
         if (sors == "stress"):
             if (ax == "xy"):
@@ -197,7 +185,7 @@ def mplotTThk(loadingCase, sors, ax):
                 x.append(stress[0,0])
             else:
                 from sys import exit
-                print "Unknown parameter. Exit now..."
+                print("Unknown parameter. Exit now...")
                 sys.exit()
         elif (sors == "strain"):
             if (ax == "xy"):
@@ -211,15 +199,13 @@ def mplotTThk(loadingCase, sors, ax):
                 stress = loadingCase.list_ply_strains_12[i*3 + 2]
                 x.append(stress[0,0])
             else:
-                from sys import exit
-                print "Unknown parameter. Exit now..."
+                print("Unknown parameter. Exit now...")
                 sys.exit()
         else:
-                from sys import exit
-                print "Unknown parameter. Exit now..."
+                print("Unknown parameter. Exit now...")
                 sys.exit()
 
-    print x
+    print(x)
     plt.plot(x,y)
     plt.axvline(x = 0, linestyle = '-')
     for i in stackThk:
